@@ -1,0 +1,1 @@
+web: java -jar target/habit-tracker-api-0.0.1-SNAPSHOT.jar

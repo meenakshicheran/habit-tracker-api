@@ -1,0 +1,18 @@
+# Set these as environment variables on your host (Railway, Render, etc.)
+# Never commit real values to source control
+
+DB_URL=jdbc:mysql://host:3306/habitflow?useSSL=true&serverTimezone=UTC
+DB_USERNAME=your_db_user
+DB_PASSWORD=your_db_password
+
+# Generate with: openssl rand -base64 48
+JWT_SECRET=replace-with-strong-random-secret-minimum-32-chars
+
+# Comma-separated list of allowed frontend origins
+ALLOWED_ORIGINS=https://your-app.vercel.app
+
+# Use 'validate' in production (don't auto-alter schema)
+JPA_DDL_AUTO=validate
+
+PORT=8080
+JWT_EXPIRATION=86400000
